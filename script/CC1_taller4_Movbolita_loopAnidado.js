@@ -30,12 +30,12 @@ function draw() {
       // ellipse(x + i, y + j, 15);      
       ellipse(x + i + 20*cos(ref), y + j + 20*sin(ref), 15);      
       
-      // Hace un ellipse gris
+      // Hace un ellipse 
       noStroke();
-      fill(150);
+      // fill(255*noise(nZ));
+      fill(50,255*noise(nZ),0);
       
-      // fill(50,255*noise(nZ),0);
-      // nZ += 5;
+      nZ += .05;
       // ellipse(x + i - 10*cos(ref), y + j,10,5); 
       // ellipse(x + i, y + j - 10*sin(ref),10,5); 
       ellipse(x + i - 10*cos(ref), y + j - 10*sin(ref),10,5);   
