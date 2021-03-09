@@ -56,30 +56,37 @@ function setup() {
   point(50,200);
   point(200,50);
   
-//   Otros comandos
-//   // sinBorde
-//   noStroke();
-//   // color de relleno
-//   fill(150);
-//   // mover Referencia
-//   translate(50,300);
-//   // triangle(x1, y1, x2, y2, x3, y3)
-//   triangle(30, 75, 58, 20, 86, 75);
+  // Otros comandos
+  // sinBorde
+  noStroke();
+  // color de relleno
+  fill(150);
+  // mover Referencia
+  translate(50,300);
+  // triangle(x1, y1, x2, y2, x3, y3)
+  triangle(30, 75, 58, 20, 86, 75);
   
-//   translate(100,0);
-//   fill(0,120,0);
-//   // quad(x1, y1, x2, y2, x3, y3, x4, y4)
-//   quad(38, 31, 86, 20, 69, 63, 30, 76);
+  translate(100,0);
+  fill(0,120,0);
+  // quad(x1, y1, x2, y2, x3, y3, x4, y4)
+  quad(38, 31, 86, 20, 69, 63, 30, 76);
   
-//   translate(100,-250);
-//   // arc(centroX,centroY,ancho,alto,anguloInicio,anguloFin)
-//   arc(50, 55, 50, 50, 0, HALF_PI);
-//   noFill();
-//   stroke(0);
-//   strokeWeight(1);
-//   arc(50, 55, 60, 60, HALF_PI, PI);
-//   arc(50, 55, 70, 70, PI, PI + QUARTER_PI);
-//   arc(50, 55, 80, 80, PI + QUARTER_PI, TWO_PI);
+  translate(100,-250);
+  // arco verde
+  // arc(centroX,centroY,ancho,alto,anguloInicio,anguloFin)
+  arc(50, 55, 50, 50, 0, HALF_PI);
+  noFill();
+  stroke(0);
+  strokeWeight(1);
+  arc(50, 55, 60, 60, HALF_PI, PI);
+  arc(50, 55, 70, 70, PI, PI + QUARTER_PI);
+  arc(50, 55, 80, 80, PI + QUARTER_PI, TWO_PI);
 
+  translate(-250,200);
+  stroke(255, 102, 0);
+  line(85, 20, 10, 10);
+  line(90, 90, 15, 80);
+  stroke(0, 0, 0);
+  bezier(85, 20, 10, 10, 90, 90, 15, 80);
 }
 
