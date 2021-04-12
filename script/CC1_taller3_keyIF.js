@@ -1,7 +1,8 @@
 let x, y, yVar; 
 
 function setup() {
-  createCanvas(400,400);
+  let cnv = createCanvas(500,500);
+  cnv.parent('sketch');
   fill(100, 245, 158);
   textSize(50);
   background(10);
@@ -17,7 +18,7 @@ function draw() {
 function keyPressed() {
   text(key, x, y + 20*sin(yVar)); 
   // La variable 'key' esta definida en p5 y devulve la tecla presionada
-  console.log(key);  
+  print(key);  
   
   // La variable 'keyCode' devuelve el nombre de algunas teclas especiales
   // Si la tecla presionada es 'Backspace', dibuja el fonodo de negro y cambia el color del texto

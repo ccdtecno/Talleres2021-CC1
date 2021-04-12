@@ -1,7 +1,8 @@
 let ancho = 200;
 let valor = 255;
 function setup() {
-  createCanvas(400,400);
+  let cnv = createCanvas(500,500);
+  cnv.parent('sketch');
   rectMode(CENTER);
   
 }

@@ -2,7 +2,8 @@
 let diametro, x,y,aumento, vel;
 
 function setup() {
-  createCanvas(400, 400);
+  let cnv = createCanvas(500, 500);
+  cnv.parent('sketch');
   background(220);
   rectMode(CENTER);
   // diametro inicial de las figuras
@@ -20,10 +21,10 @@ function draw() {
   background(220);
   
   // Este for se utiliza para dibujar las figuras a lo largo del eje vertical
-  for(let j = 0; j < diametro*11; j+= diametro*2.5){
+  for(let j = 0; j < diametro*16; j+= diametro*2.5){
     
     // Este for se utiliza para dibujar las figuras a lo largo del eje horizontal
-    for(let i = 0; i < diametro*11; i += diametro*2.5){
+    for(let i = 0; i < diametro*16; i += diametro*2.5){
       
       // dibuja un circulo negro pequeño
       fill(0,0,0);

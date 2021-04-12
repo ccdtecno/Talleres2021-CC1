@@ -9,7 +9,8 @@ let initFrontera, finFrontera;
 
 
 function setup() {
-  createCanvas(500,500);
+  let cnv = createCanvas(500,500);
+  cnv.parent('sketch');
   background(220);
   
   // Inicialización de variables

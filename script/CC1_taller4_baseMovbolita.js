@@ -12,7 +12,7 @@ function draw() {
   background(220);
   
   ellipse(x,y+(100*sin(yAng)),30);
-  x += 4;
+  x += 2;
   
   yAng-=0.2;
 }

@@ -2,7 +2,8 @@
 let diametro, x, y, yVar, xVar;
 
 function setup() {
-  createCanvas(400, 400);
+  let cnv = createCanvas(500, 500);
+  cnv.parent('sketch');
   background(220);
   // diametro general de las bolitas
   diametro = 35;

@@ -8,7 +8,8 @@ let frame4;
 let noize = 0;
 
 function setup() {
-  createCanvas(400, 400);
+  let cnv = createCanvas(500, 500);
+  cnv.parent('sketch');
   frame1 = 0;
   frame2 = 0;
   frame3 = 0;

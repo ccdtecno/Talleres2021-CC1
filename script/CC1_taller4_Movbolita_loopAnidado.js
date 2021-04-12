@@ -2,7 +2,8 @@
 let separacion, x,y,ref, xVar;
 
 function setup() {
-  createCanvas(400, 400);
+  let cnv = createCanvas(400, 400);
+  cnv.parent('sketch');
   background(0);
   // Separacion entre los circulos
   separacion = 40;
@@ -13,6 +14,7 @@ function setup() {
   ref = 0;
   
   nZ = random(100);
+  frameRate(30);  
 }
 
 function draw() {
@@ -36,6 +38,7 @@ function draw() {
       fill(50,255*noise(nZ),0);
       
       nZ += .05;
+      // ellipse(x,y,10,5);
       // ellipse(x + i - 10*cos(ref), y + j,10,5); 
       // ellipse(x + i, y + j - 10*sin(ref),10,5); 
       ellipse(x + i - 10*cos(ref), y + j - 10*sin(ref),10,5);   

@@ -2,8 +2,8 @@
 function setup() {
   
   // Configuracion de la mesa de trabajo(alto, ancho)
-  createCanvas(400, 400)
-  
+  let cnv = createCanvas(500, 500)
+  cnv.parent('sketch');
   // color de fondo
   background(180,0,200);
   // Referencia de los rectangulos
@@ -90,3 +90,6 @@ function setup() {
   bezier(85, 20, 10, 10, 90, 90, 15, 80);
 }
 
+function draw() {
+  // background(255);
+}
