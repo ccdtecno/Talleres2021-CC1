@@ -2,8 +2,8 @@
 function setup() {
   
   // Configuracion de la mesa de trabajo(alto, ancho)
-  let cnv = createCanvas(500, 500)
-  cnv.parent('sketch');
+  let cnv = createCanvas(600, 600)
+  cnv.parent('main__sketch');
   // color de fondo
   background(180,0,200);
   // Referencia de los rectangulos

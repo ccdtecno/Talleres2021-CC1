@@ -1,8 +1,8 @@
 let x, y, yVar; 
 
 function setup() {
-  let cnv = createCanvas(500,500);
-  cnv.parent('sketch');
+  let cnv = createCanvas(600,600);
+  cnv.parent('main__sketch');
   fill(100, 245, 158);
   textSize(50);
   background(10);

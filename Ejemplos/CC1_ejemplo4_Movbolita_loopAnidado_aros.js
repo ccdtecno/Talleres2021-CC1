@@ -2,8 +2,8 @@
 let diametro, x,y,aumento, vel;
 
 function setup() {
-  let cnv = createCanvas(500, 500);
-  cnv.parent('sketch');
+  let cnv = createCanvas(600, 600);
+  cnv.parent('main__sketch');
   background(220);
   rectMode(CENTER);
   // diametro inicial de las figuras
