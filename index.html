@@ -1,94 +1,253 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducción a Código Creativo</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/media-queries.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <script src="./libraries/p5.js"></script>
+<!--
+=========================================================
+Material Kit - v2.0.7
+=========================================================
 
+Product Page: https://www.creative-tim.com/product/material-kit
+Copyright 2020 Creative Tim (https://www.creative-tim.com/)
+
+Coded by Creative Tim
+
+=========================================================
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href=".../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Introducción al código
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <!-- <link href="../assets/demo/demo.css" rel="stylesheet" /> -->
 </head>
 
-<body>
-    <header>
-        <div class="header__menu-container">
-            <div class="header__menu">
-                <img src="./assets/icons/menu_light.svg" alt="Icono del menu">
-                <nav class="header__menu-list">
-                    <ul>
-                        <li><a href="https://ccdtecno.github.io/">Home</a></li>
-                        <h3>Links al código:</h3>
-                        <li><a href="https://github.com/ccdtecno/Talleres2021-CC1/blob/main/script/CC_taller1_Basicos.js" target="_blank">Comandos básicos</a></li>
-                        <li><a href="https://github.com/ccdtecno/Talleres2021-CC1/blob/main/script/CC1_taller2.3_tiposDeMovimiento.js" target="_blank">Posición y movimiento</a></li>
-                        <li><a href="https://github.com/ccdtecno/Talleres2021-CC1/blob/main/script/CC1_taller3_keyIF.js" target="_blank">Interacción con el teclado</a></li>
-                        <li><a href="https://github.com/ccdtecno/Talleres2021-CC1/blob/main/script/CC1_taller3_MouseElse.js" target="_blank">Interacción con el mouse</a></li>
-                        <li><a href="https://github.com/ccdtecno/Talleres2021-CC1/blob/main/script/CC1_taller4_MultipleMovbolita.js" target="_blank">Condicionales: IF</a></li>
-                        <li><a href="https://github.com/ccdtecno/Talleres2021-CC1/blob/main/Ejemplos/CC1_ejemplo2.5._Bolita_vectores_Muchos.js" target="_blank">Ciclos: FOR</a></li>
-                        <li><a href="https://github.com/ccdtecno/Talleres2021-CC1/blob/main/Ejemplos/CC1_ejemplo4_Movbolita_loopAnidado_aros.js"" target="_blank">Ciclos: FOR anidado</a></li>
-                    </ul>
-                </nav>
+<body class="index-page sidebar-collapse">
+  <nav class="navbar bg-warning fixed-top navbar-expand-lg" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="https://ccdtecno.github.io/">
+          ccdtecno </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons">build</i> Talleres
+            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="https://ccdtecno.github.io/Talleres2021-CC1/" class="dropdown-item">
+                <i class="material-icons">code</i> Introducción al Código Creativo
+              </a>
+              <a href="https://ccdtecno.github.io/Talleres2021-CC2/" class="dropdown-item">
+                <i class="material-icons">graphic_eq</i> Audio y Web
+              </a>
+              <a href="https://ccdtecno.github.io/Talleres2021-CC3/" class="dropdown-item">
+                <i class="material-icons">storage</i> Código y Datos
+              </a>
+              <a href="https://ccdtecno.github.io/Talleres2021-CC1/" class="dropdown-item">
+                <i class="material-icons">settings_input_antenna</i> Introducción al Internet de las Cosas
+              </a>
+              <a href="https://ccdtecno.github.io/Talleres2021-CC2/" class="dropdown-item">
+                <i class="material-icons">group_work</i> Aplicaciones de Interaccion Colaborativa
+              </a>
+              <a href="https://ccdtecno.github.io/Talleres2021-CC3/" class="dropdown-item">
+                <i class="material-icons">cast</i> Experiencias Telemáticas
+              </a>
             </div>
-            <div class="header__title-container">
-                <h1>Comandos básicos</h1>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()"> -->
+              <a class="nav-link" href="https://ccdtecno.github.io/containers/Gallery.html" target="_self">
+              <i class="material-icons">perm_media</i> Galería
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ccdtecno.github.io/containers/About.html" target="_self">
+              <i class="material-icons">group</i> Nosotros
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="main main-raised">
+    <div class="section section-white">
+      <div class="title ml-2">
+        <h2>Introducción al código creativo</h2>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="card">
+            <div class="card-header-warning">
+              <h4 class="card-title pl-3 pb-1">Introducción a p5.js</h4>
+              <!-- <p class="category">Título del sketch</p> -->
             </div>
-            <div class="header__ccd-container">
-                <a href="https://www.centroculturadigital.mx/" target="_blank"><img src="/assets/logo/blockLight.svg" alt="Logo del CCD"></a>
+            <div id="sketch-container" class="card-body">
             </div>
+          </div>
         </div>
+        <div class="col-12 col-lg-4">
+          <!-- PAGINATION -->
+          <div class="align-items-center">
+            <ul class="pagination pagination-warning justify-content-center">
+              <li class="page-item"><a href="/containers/intro_10.html" class="page-link"> prev</a></li>
+              <li class="page-item"><a href="/containers/intro_09.html" class="page-link">9</a></li>
+              <li class="page-item"><a href="/containers/intro_10.html" class="page-link">10</a></li>
+              <li class="active page-item "><a href="#" class="page-link">1</a></li>
+              <li class="page-item"><a href="/containers/intro_02.html" class="page-link">2</a></li>
+              <li class="page-item"><a href="/containers/intro_03.html" class="page-link">3</a></li>
+              <li class="page-item"><a href="/containers/intro_02.html" class="page-link">next </a></li>
+            </ul>
+          </div>
+          <!-- NAV PILL -->
+          <div class="card">
+            <!-- ICONOS -->
+            <ul class="nav nav-pills nav-pills-warning nav-pills-icons" role="tablist">
+              <!-- color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger" -->
+              <li class="nav-item">
+                <a class="nav-link active" href="#instrucciones-1" role="tab" data-toggle="tab">
+                  <i class="material-icons">pets</i>
+                  Instrucciones
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#informacion-1" role="tab" data-toggle="tab">
+                  <i class="material-icons">info</i>
+                  Información
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#codigo-1" role="tab" data-toggle="tab">
+                  <i class="material-icons">code</i>
+                  Código
+                </a>
+              </li>
 
-    </header>
-
-    <main class="main-gallery">
-        <section class="main-gallery__text-container">
-
-            <!-- <article class="main-gallery__info">
-                <h3>Info</h3>
-                <div class="text__card">
-                    <h2>Titulo de la info</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam qui mollitia autem, rem quia vitae consectetur, iste nam inventore quae asperiores dolor quod officia sequi placeat, quam exercitationem repellat!</p>
-                </div>
-            </article>
-
-            <article class="main-gallery__interaction">
-                <h3>Help</h3>
-                <div class="text__card">
-                    <h2>Titulo de la info</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam qui mollitia autem, rem quia vitae consectetur, iste nam inventore quae asperiores dolor quod officia sequi placeat, quam exercitationem repellat!</p>
-                </div>
-            </article> -->
-
-            <div class="button__container">
-                <!-- <a href="/" type="submit"> <button class="button__gallery"> <<< </button></a> -->
-                <a href="./index_movimiento.html" type="submit"> <button class="button__gallery"> >>> </button></a>
+            </ul>
+            <!-- TEXTO -->
+            <div class="tab-content tab-space">
+              <div class="tab-pane active" id="instrucciones-1">
+                <br>
+                P5.js es una librería y entorno de programación que utiliza el lenguaje de programación Javascript.
+                <br><br>
+                En este podemos crear formas complejas a través de código, programar interacciones de usuario y brindar animación a los elementos.
+              </div>
+              <div class="tab-pane" id="informacion-1">
+                <h4>Autor:</h4>
+                <p>ccdtecno</p>
+                <br>
+                <h4>Contacto:</h4>
+                <a href="https://www.instagram.com/ccdtecno/" target="_blank">
+                  <i class="material-icons">public</i>
+                  Instagram
+                </a>
+                <br><br>
+                <a href="https://www.github.com/ccdtecno" target="_blank">
+                  <i class="material-icons">public</i>
+                  Github
+                </a>
+              </div>
+              <div class="tab-pane" id="codigo-1">
+                <a href="https://editor.p5js.org/ccdtecno/sketches/UKIpL_pE2" target="_blank">
+                  <i class="material-icons">mediation</i>
+                  Edita el código y pruebalo ahora:
+                </a>
+              </div>
             </div>
-
-        </section>
-        
-        <div class="main-gallery__sketch--container">
-            <div id="main__sketch"></div>
-        </div>       
-
-    </main>
-
-    <footer>
-        <div class="footer__icon--container">
-            <a href="https://github.com/ccdtecno" target="_blank"><img src="./assets/icons/github_logo.svg" alt="Logo de Github"></a>
-            <a href="https://www.instagram.com/ccdtecno/" target="_blank"><img src="./assets/icons/instagramLight.svg" alt="Logo de Instagram"></a>
-            <!-- <a href=""></a> -->
+            <!-- BOTON -->
+            <!-- <button type="button" class="btn mx-auto" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body">On top</button> -->
+          </div>
         </div>
-        
-        <div class="footer__text--container">
-            <p>Elaborado y diseñado por <a href="https://github.com/SoyUnCitrico" target="_blank"><em>@soyuncitrico</em></a> 2021</p>
-        </div>
+    </div>
+  </div>
+  <footer class="footer" data-background-color="black">
+    <div class="container">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="https://www.github.com/ccdtecno" target="_blank">
+              <div class="d-flex align-items-center">
+                <ion-icon class="footer-icon pr-1" name="logo-github"></ion-icon>
+                <h6>Github</h6>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ccdtecno" target="_blank">
+              <div class="d-flex align-items-center">
+                <ion-icon class="footer-icon pr-1" name="logo-instagram"></ion-icon>
+                <h6>Instagram</h6>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright float-right">
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, ccdtecno es un espacio del
+        <a href="https://www.centroculturadigital.mx/" target="_blank">
+          CCD 
+          <i class="material-icons">favorite</i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="../assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+  <script src="../assets/js/plugins/p5/p5.js" type="text/javascript"></script>
+  <script src="../assets/js/plugins/p5/addons/p5.sound.js" type="text/javascript"></script>
+  <script src="../assets/js/scripts/CC1/Ejemplos/CC1_ejemplo1_cuadradoCirculos.js"></script>
+  <script>
 
-        <div class="footer__logo">
-            <img src="./assets/logo/logoLight.svg" alt="Logo del CCD">
-        </div>
-    </footer>
+
+
+    $(document).ready(function() {
+      //init DateTimePickers
+      materialKit.initFormExtendedDatetimepickers();
+
+      // Sliders Init
+      materialKit.initSliders();
+    });
+
+
+    function scrollToDownload() {
+      if ($('.section-download').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-download').offset().top
+        }, 1000);
+      }
+    }
+  </script>
 </body>
+
 </html>
-<script src="./script/CC_taller1_Basicos.js" type="text/javascript"></script>
